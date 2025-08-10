@@ -13,7 +13,7 @@ st.set_page_config(page_title="SIH 2024 Dashboard", layout="wide")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("d:/AI_BootCamp/Dashboards/SIH_PS_Winners_2024.csv")
+    df = pd.read_csv("SIH_PS_Winners_2024.csv")
     # Rename columns for consistency with code
     df = df.rename(columns={
         "ID": "Problem Statement ID",
